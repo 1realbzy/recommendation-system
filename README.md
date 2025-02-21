@@ -12,6 +12,43 @@ This project focuses on developing a sophisticated recommendation system that le
 6. Boost Business Metrics through personalization
 7. Balance Accuracy & Diversity in recommendations
 
+## Project Timeline (4 Weeks)
+
+### Week 1 (Current)
+- [x] Project setup and repository initialization
+- [ ] Data acquisition and initial exploration
+- [ ] Business understanding documentation
+- [ ] First Medium article: "Getting Started with Recommendation Systems"
+
+### Week 2
+- [ ] Data preprocessing and feature engineering
+- [ ] Exploratory Data Analysis (EDA)
+- [ ] Initial model prototyping
+- [ ] Medium article: "Data Preprocessing and EDA for Recommendation Systems"
+
+### Week 3
+- [ ] Model development and optimization
+- [ ] Implementation of different recommendation approaches
+- [ ] Performance evaluation
+- [ ] Medium article: "Building and Optimizing Recommendation Models"
+
+### Week 4
+- [ ] Fine-tuning and optimization
+- [ ] Documentation and results analysis
+- [ ] Final presentation preparation
+- [ ] Medium article: "Lessons Learned: Implementing a Production-Ready Recommendation System"
+
+## Daily Progress Tracking
+
+### Week 1
+- Day 1 (Current): Repository setup, project structure creation
+- Day 2: TBD
+- Day 3: TBD
+- Day 4: TBD
+- Day 5: TBD
+
+(Remaining weeks will be updated progressively)
+
 ## Project Structure
 ```
 recommendation-system/
@@ -26,6 +63,17 @@ recommendation-system/
 ├── requirements.txt          # Project dependencies
 └── README.md                # Project documentation
 ```
+
+## Documentation Strategy
+1. **Daily GitHub Commits**
+   - Code changes and improvements
+   - Progress updates in README
+   - Documentation updates
+
+2. **Weekly Medium Articles**
+   - Technical deep-dives into the week's progress
+   - Challenges faced and solutions implemented
+   - Insights and learnings
 
 ## Tools and Technologies
 1. **Python** - Primary programming language
@@ -78,9 +126,6 @@ recommendation-system/
 2. Install dependencies: `pip install -r requirements.txt`
 3. Download the dataset from the provided link
 4. Follow the notebooks in the `notebooks/` directory
-
-## Project Progress
-Daily updates and progress will be tracked through GitHub commits.
 
 ## License
 [MIT License](LICENSE) 
