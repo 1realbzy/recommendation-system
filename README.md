@@ -42,7 +42,7 @@ This project focuses on developing a sophisticated recommendation system that le
 
 ### Week 1
 - Day 1 (Current): Repository setup, project structure creation
-- Day 2: TBD
+- Day 2: unzipping the data and starting analysis
 - Day 3: TBD
 - Day 4: TBD
 - Day 5: TBD
