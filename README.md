@@ -1,22 +1,35 @@
 # Recommendation System Analysis & Modeling
 
 ## Project Overview
-This project focuses on developing a sophisticated recommendation system that leverages historical user data to provide personalized recommendations across various domains. The system aims to enhance user experience through tailored suggestions for products, content, and services.
+This project focuses on developing a sophisticated recommendation system using a real-world e-commerce dataset. The system aims to solve two main tasks: predicting item properties from user behavior and detecting abnormal users.
+
+### Dataset Characteristics
+- 4.5 months of user interaction data
+- 2,756,101 total events
+  - 2,664,312 views
+  - 69,332 add to carts
+  - 22,457 transactions
+- 1,407,580 unique visitors
+- 417,053 unique items
+- 20,275,902 item property records
+- 1,669 category relationships
 
 ### Key Objectives
-1. Develop Personalized Recommendations based on user behavior and interactions
-2. Address Diverse Use Cases across different domains
-3. Utilize Historical Data for accurate predictions
-4. Enhance User Engagement and satisfaction
-5. Ensure Scalability & Real-Time Performance
-6. Boost Business Metrics through personalization
-7. Balance Accuracy & Diversity in recommendations
+1. Task 1: Property Prediction
+   - Predict item properties for "addtocart" events
+   - Use "view" event patterns
+   - Handle implicit user preferences
+
+2. Task 2: Abnormal User Detection
+   - Identify abnormal e-shop users
+   - Improve recommendation effectiveness
+   - Reduce bias in split tests
 
 ## Project Timeline (4 Weeks)
 
 ### Week 1 (Current)
 - [x] Project setup and repository initialization
-- [ ] Data acquisition and initial exploration
+- [x] Data acquisition and initial understanding
 - [ ] Business understanding documentation
 - [ ] First Medium article: "Getting Started with Recommendation Systems"
 
@@ -41,18 +54,19 @@ This project focuses on developing a sophisticated recommendation system that le
 ## Daily Progress Tracking
 
 ### Week 1
-- Day 1 (Current): Repository setup, project structure creation
-- Day 2: unzipping the data and starting analysis
-- Day 3: TBD
+- Day 1: Repository setup, project structure creation ✓
+- Day 2: Data acquisition and initial dataset understanding ✓
+- Day 3: Business understanding documentation and analysis planning
 - Day 4: TBD
 - Day 5: TBD
-
-(Remaining weeks will be updated progressively)
 
 ## Project Structure
 ```
 recommendation-system/
-├── data/                      # Data directory for storing datasets
+├── data/                      # Data files
+│   ├── events.csv            # User interaction events (90MB)
+│   ├── item_properties_*.csv # Item characteristics (852MB total)
+│   └── category_tree.csv     # Category hierarchy (14KB)
 ├── notebooks/                 # Jupyter notebooks for analysis
 ├── src/                      # Source code
 │   ├── data_preprocessing/   # Data cleaning and preparation
@@ -63,6 +77,25 @@ recommendation-system/
 ├── requirements.txt          # Project dependencies
 └── README.md                # Project documentation
 ```
+
+## Data Description
+
+### events.csv
+- User interaction events (views, add to cart, transactions)
+- Format: timestamp, visitorId, eventType, itemId, [transactionId]
+
+### item_properties.csv
+- Time-dependent item characteristics
+- Special properties:
+  - categoryid: Category identifier
+  - available: Item availability (1/0)
+- Value formats:
+  - Numerical: prefixed with 'n', 3 decimal places
+  - Text: stemmed and hashed words
+
+### category_tree.csv
+- Category hierarchy relationships
+- Format: childCategoryId, parentCategoryId
 
 ## Documentation Strategy
 1. **Daily GitHub Commits**
@@ -124,8 +157,7 @@ recommendation-system/
 ## Getting Started
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
-3. Download the dataset from the provided link
-4. Follow the notebooks in the `notebooks/` directory
+3. Follow the notebooks in the `notebooks/` directory
 
 ## License
 [MIT License](LICENSE) 
