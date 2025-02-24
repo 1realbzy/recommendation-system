@@ -20,13 +20,12 @@ This project develops a recommendation system for an e-commerce platform using t
 
 ## Progress Log
 
-### Day 6 (Current)
-
-- Established project structure and environment
-- Defined business questions and objectives
-- Created initial EDA notebook
-- Started analyzing user interaction patterns
-- Published first Medium article
+### Week 1 (Current)
+- Project initialization and environment setup
+- Business understanding and objectives definition
+- Data exploration and initial analysis setup
+- Created analysis notebooks following CRISP-DM framework
+- Weekly progress documentation on Medium
 
 ## Business Questions
 
