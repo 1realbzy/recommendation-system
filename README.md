@@ -61,7 +61,7 @@ This project develops a recommendation system for an e-commerce platform using t
 
 ## Next Steps
 
-- Complete initial EDA
+- Complete initial EDA (almost completed)
 - Analyze conversion funnel
 - Investigate seasonal patterns
 - Develop user behavior profiles
